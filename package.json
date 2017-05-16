@@ -1,0 +1,16 @@
+{
+  "name": "immobilienscout24-scrapper-service",
+  "version": "0.0.1",
+  "description": "Microservice to scrape and serve Immobilienscout24 data by city",
+  "main": "service.js",
+  "author": "Daniel Waller",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "fs": "0.0.1-security",
+    "immobilienscout24-scraper": "^1.0.4",
+    "method-override": "^2.3.8",
+    "time-stamp": "^1.0.1",
+    "underscore": "^1.8.3"
+  }
+}
