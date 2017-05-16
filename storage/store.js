@@ -70,7 +70,10 @@ module.exports.Store = function() {
   }
 
   this.getEntries = function() {
-    return JSON.parse(JSON.stringify(store.iterator));
+    var availableEntries = _.filter(store.iterator, function(entry) {
+      return entry['isAvailable'];
+    });
+    return JSON.parse(JSON.stringify(availableEntries));
   };
 
 };
